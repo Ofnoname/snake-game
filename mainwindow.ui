@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1024</width>
+    <height>768</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>微软雅黑</family>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Snakegame GUI</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="startgame">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>330</y>
+      <width>131</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Play</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1024</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_H">
+    <property name="title">
+     <string>Help</string>
+    </property>
+    <addaction name="actionGame_manual"/>
+    <addaction name="actionAbout"/>
+   </widget>
+   <widget class="QMenu" name="menuSettings">
+    <property name="title">
+     <string>Settings</string>
+    </property>
+    <widget class="QMenu" name="menuDifficulty">
+     <property name="title">
+      <string>Difficulty</string>
+     </property>
+     <addaction name="actionEasy"/>
+     <addaction name="actionMedium"/>
+     <addaction name="actionHard"/>
+     <addaction name="actionExpert"/>
+    </widget>
+    <widget class="QMenu" name="menuMap">
+     <property name="title">
+      <string>Map</string>
+     </property>
+     <addaction name="actionBorderless"/>
+     <addaction name="actionClassic_Box"/>
+     <addaction name="actionTrail_Station"/>
+    </widget>
+    <addaction name="menuDifficulty"/>
+    <addaction name="menuMap"/>
+   </widget>
+   <addaction name="menu_H"/>
+   <addaction name="menuSettings"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionAbout">
+   <property name="text">
+    <string>About</string>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>false</bool>
+   </property>
+  </action>
+  <action name="actionGame_manual">
+   <property name="text">
+    <string>Game manual</string>
+   </property>
+  </action>
+  <action name="actionEasy">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Easy</string>
+   </property>
+  </action>
+  <action name="actionMedium">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Medium</string>
+   </property>
+  </action>
+  <action name="actionHard">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Hard</string>
+   </property>
+  </action>
+  <action name="actionExpert">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Expert</string>
+   </property>
+  </action>
+  <action name="actionBorderless">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Borderless</string>
+   </property>
+  </action>
+  <action name="actionClassic_Box">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Classic Box</string>
+   </property>
+  </action>
+  <action name="actionTrail_Station">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Trail station</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
